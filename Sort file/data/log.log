@@ -1,0 +1,220 @@
+------------file before sort------------
+1603685629
+1962582434
+2077248716
+1965929942
+1136278484
+1903433389
+1357932504
+2053243813
+1934081860
+2126602179
+writing 1 series to tape 1 from tape 0
+current record on data tape before write: 1603685629
+1 series were written (no joining)
+there are 1 series currently on a tape
+current record on data tape after write: 1965929942
+
+writing 1 series to tape 2 from tape 0
+current record on data tape before write: 1965929942
+1 series were written (no joining)
+there are 1 series currently on a tape
+current record on data tape after write: 1136278484
+
+writing 1 series to tape 1 from tape 0
+current record on data tape before write: 1136278484
+1 series were written (no joining)
+there are 2 series currently on a tape
+current record on data tape after write: 1357932504
+
+writing 2 series to tape 2 from tape 0
+current record on data tape before write: 1357932504
+2 series were written (no joining)
+0 dummy runs needed
+there are 3 series currently on a tape
+current record on data tape after write: DNE
+
+tapes after distribution phase
+-----------------tape0------------------
+1603685629
+1962582434
+2077248716
+1965929942
+1136278484
+1903433389
+1357932504
+2053243813
+1934081860
+2126602179
+-----------------tape1------------------
+1603685629
+1962582434
+2077248716
+1136278484
+1903433389
+-----------------tape2------------------
+1965929942
+1357932504
+2053243813
+1934081860
+2126602179
+
+merging tapes 2 and 1
+comparing record 1965929942 with 1603685629
+save tape is: 1
+saving record 1603685629
+comparing record 1965929942 with 1962582434
+save tape is: 1
+saving record 1962582434
+comparing record 1965929942 with 2077248716
+save tape is: 2
+saving record 1965929942
+series on tape 2 ended - finishing series of tape 1
+saving record 2077248716
+
+comparing record 1357932504 with 1136278484
+save tape is: 1
+saving record 1136278484
+comparing record 1357932504 with 1903433389
+save tape is: 2
+saving record 1357932504
+comparing record 2053243813 with 1903433389
+save tape is: 1
+saving record 1903433389
+series on tape 1 ended - finishing series of tape 2
+saving record 2053243813
+
+no more data on tape 1 - merge ended
+current record of tape 2 after merge: 1934081860
+
+tapes after 0 phase
+-----------------tape1------------------
+-----------------empty------------------
+-----------------tape0------------------
+1603685629
+1962582434
+1965929942
+2077248716
+1136278484
+1357932504
+1903433389
+2053243813
+-----------------tape2------------------
+-----current record: 1934081860-----
+1965929942
+1357932504
+2053243813
+1934081860
+2126602179
+
+merging tapes 0 and 2
+comparing record 1603685629 with 1934081860
+save tape is: 0
+saving record 1603685629
+comparing record 1962582434 with 1934081860
+save tape is: 2
+saving record 1934081860
+comparing record 1962582434 with 2126602179
+save tape is: 0
+saving record 1962582434
+comparing record 1965929942 with 2126602179
+save tape is: 0
+saving record 1965929942
+comparing record 2077248716 with 2126602179
+save tape is: 0
+saving record 2077248716
+series on tape 0 ended - finishing series of tape 2
+saving record 2126602179
+
+no more data on tape 2 - merge ended
+current record of tape 0 after merge: 1136278484
+
+tapes after 1 phase
+-----------------tape2------------------
+-----------------empty------------------
+-----------------tape1------------------
+1603685629
+1934081860
+1962582434
+1965929942
+2077248716
+2126602179
+-----------------tape0------------------
+-----current record: 1136278484-----
+1603685629
+1962582434
+1965929942
+2077248716
+1136278484
+1357932504
+1903433389
+2053243813
+
+merging tapes 1 and 0
+comparing record 1603685629 with 1136278484
+save tape is: 0
+saving record 1136278484
+comparing record 1603685629 with 1357932504
+save tape is: 0
+saving record 1357932504
+comparing record 1603685629 with 1903433389
+save tape is: 1
+saving record 1603685629
+comparing record 1934081860 with 1903433389
+save tape is: 0
+saving record 1903433389
+comparing record 1934081860 with 2053243813
+save tape is: 1
+saving record 1934081860
+comparing record 1962582434 with 2053243813
+save tape is: 1
+saving record 1962582434
+comparing record 1965929942 with 2053243813
+save tape is: 1
+saving record 1965929942
+comparing record 2077248716 with 2053243813
+save tape is: 0
+saving record 2053243813
+series on tape 0 ended - finishing series of tape 1
+saving record 2077248716
+saving record 2126602179
+
+no more data on tape 0 - merge ended
+current record of tape 1 after merge: DNE
+
+tapes after 2 phase
+-----------------tape0------------------
+-----------------empty------------------
+-----------------tape2------------------
+1136278484
+1357932504
+1603685629
+1903433389
+1934081860
+1962582434
+1965929942
+2053243813
+2077248716
+2126602179
+-----------------tape1------------------
+-----current record: DNE-----
+1603685629
+1934081860
+1962582434
+1965929942
+2077248716
+2126602179
+
+
+sorted file after 3 phases
+-----------------tape2------------------
+1136278484
+1357932504
+1603685629
+1903433389
+1934081860
+1962582434
+1965929942
+2053243813
+2077248716
+2126602179
